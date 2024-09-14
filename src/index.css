@@ -1,0 +1,23 @@
+.wrapper {
+  margin: auto;
+  margin-top: 10px;
+  width: 50%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  color: brown;
+}
+
+.logo{
+    color:brown;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    width: 100%;
+    padding: 10px;
+  }
+}
