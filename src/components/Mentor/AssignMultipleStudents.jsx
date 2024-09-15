@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Topbar from "../Topbar";
 import AxiosService from "../../utils/AxiosService";
 import ApiRoutes from "../../utils/Apiroutes";
@@ -17,7 +17,7 @@ function AssignMultipleStudents() {
 
       if (res.status === 200) {
         toast.success(res.data.message);
-
+        alert(res.data.message);
         const availStudents = res.data.students.filter(
           (student) => !student.assignedMentor
         );

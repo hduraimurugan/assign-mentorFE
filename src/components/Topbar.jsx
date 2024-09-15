@@ -7,7 +7,7 @@ function Topbar() {
   return (
     <Navbar expand="lg" className="bg-body-teritary">
       <Container>
-        <Navbar.Brand href="#home" className='logo'>Student Mentor Portal</Navbar.Brand>
+        <Navbar.Brand href="/" className='logo'>Student Mentor Portal</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

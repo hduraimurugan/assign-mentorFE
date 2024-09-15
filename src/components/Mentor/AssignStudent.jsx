@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Topbar from "../Topbar";
 import AxiosService from "../../utils/AxiosService";
 import ApiRoutes from "../../utils/Apiroutes";
@@ -23,6 +23,7 @@ function AssignStudent() {
 
       if (res.status === 200) {
         toast.success(res.data.message);
+        alert(res.data.message);
         setMessage(res.data.message);
         setData(res.data.student);
         console.log(res);

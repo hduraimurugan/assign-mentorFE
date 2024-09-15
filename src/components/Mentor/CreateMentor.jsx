@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Topbar from "../Topbar";
 import AxiosService from "../../utils/AxiosService";
 import ApiRoutes from "../../utils/Apiroutes";
@@ -20,6 +20,7 @@ function CreateMentor() {
 
       if (res.status === 200) {
         toast.success(res.data.message);
+        alert(res.data.message);
         console.log(res.data);
       }
     } catch (error) {
